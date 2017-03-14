@@ -1,5 +1,11 @@
 #!/bin/bash
 
+## Remove Midori Browser, Mail (Geary), Audience and Simple Scan
+sudo apt-get purge midori -y
+sudo apt-get purge pantheon-mail -y
+sudo apt-get purge audience -y
+sudo apt-get purge simple-scan -y
+
 ## System Update
 sudo apt-get update && sudo apt-get dist-upgrade
 
@@ -8,12 +14,6 @@ sudo apt install gdebi
 
 ## Software Properties Common to enable PPA
 sudo apt-get install software-properties-common -y
-
-## Remove Midori Browser, Mail (Geary), Audience and Simple Scan
-sudo apt-get purge midori -y
-sudo apt-get purge pantheon-mail -y
-sudo apt-get purge audience -y
-sudo apt-get purge simple-scan -y
 
 ## Google Chrome (https://www.google.com/chrome)
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
