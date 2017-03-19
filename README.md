@@ -21,8 +21,7 @@
 
 ### 2. Prep Terminal
 
-- Background color: `#26282d`
-- Append `gtk-menu-bar-accel=""` to `~/.config/gtk-3.0/settings.ini` for proper `F10` key usage
+- Execute [terminal/ocean-dark-theme.sh](terminal/ocean-dark-theme.sh)
 - `.bashrc` customizations:
   - Uncomment `force_color_prompt=yes` for a colored prompt
   - Custom prompt format:
