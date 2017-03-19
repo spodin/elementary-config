@@ -22,7 +22,7 @@
 ### 2. Prep Terminal
 
 - Execute [terminal/ocean-dark-theme.sh](terminal/ocean-dark-theme.sh)
-- `.bashrc` customizations:
+- `~/.bashrc` customizations:
   - Uncomment `force_color_prompt=yes` for a colored prompt
   - Custom prompt format:
 
