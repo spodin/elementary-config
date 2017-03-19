@@ -17,37 +17,7 @@
 ### 1. Prep Elementary OS
 
 - Install software packages and assets using [install.sh](install.sh) execution
-- Using Elementary Tweaks change:
-  - Icon theme to [Paper](https://snwh.org/paper)
-  - Window control layout to `OS X`
-  - GTK+ theme to `OSX-like`
-  - Disable category switch for "Applications" menu
-  - System fonts:
-
-| Property       | Name          | Weight     | Size |
-|----------------|---------------|------------|------|
-| Default font   | SF UI Display | Normal     | 9    |
-| Document font  | SF UI Text    | Regular G3 | 10   |
-| Monospace font | SF Mono       | Regular    | 10   |
-| Titlebar font  | SF UI Display | Medium     | 9    |
-
-- Set up *window* keyboard shortcuts:
-
-| Action            | Shortcut       |
-|-------------------|----------------|
-| Maximize          | ⌘ · Ctrl · ↑   |
-| Unmaximize        | ⌘ · Ctrl · ↓   |
-| Toggle Fullscreen | ⌘ · Ctrl · F11 |
-| Tile Left         | ⌘ · Ctrl · ←   |
-| Tile Right        | ⌘ · Ctrl · →   |
-
-- Set up *custom* keyboard shortcuts:
-
-| Action          | Shortcut      |
-|-----------------|---------------|
-| lxtask          | Ctrl · Escape |
-| pantheon-files  | ⌘ · E         |
-| screenshot-tool | Print         |
+- Customize system appearance using [appearance.sh](appearance.sh) execution
 
 ### 2. Prep Terminal
 
