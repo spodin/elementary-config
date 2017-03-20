@@ -15,6 +15,3 @@ gsettings set org.pantheon.terminal.settings tab-bar-behavior 'Hide When Single 
 #gsettings set org.pantheon.terminal.settings cursor-color '#839496'
 #gsettings set org.pantheon.terminal.settings cursor-shape 'Block'
 #gsettings set org.pantheon.terminal.settings tab-bar-behavior 'Always Show Tabs'
-
-## Fix functional keys usage inside Terminal (e.g. `F10`)
-echo 'gtk-menu-bar-accel=""' >> ~/.config/gtk-3.0/settings.ini
