@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ## Set up colors, cursor color and shape
-gsettings set org.pantheon.terminal.settings palette '#2b2f3b:#bf616a:#a3be8c:#edd686:#8fa1b3:#b48ead:#96b5b4:#a3a4b5:#65737e:#bf616a:#a3be8c:#edd686:#8fa1b3:#b48ead:#96b5b4:#eff1f5'
+gsettings set org.pantheon.terminal.settings palette '#2b2f3b:#bf616a:#ee8e96:#edd686:#8fa1b3:#b48ead:#96b5b4:#a3a4b5:#65737e:#bf616a:#ee8e96:#edd686:#8fa1b3:#b48ead:#96b5b4:#eff1f5'
 gsettings set org.pantheon.terminal.settings background '#2b2f3b'
 gsettings set org.pantheon.terminal.settings foreground '#a3a4b5'
 gsettings set org.pantheon.terminal.settings cursor-color '#a3a4b5'
