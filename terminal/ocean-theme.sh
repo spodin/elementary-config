@@ -2,7 +2,7 @@
 
 ## Set up colors, cursor color and shape2
 gsettings set org.pantheon.terminal.settings palette '#2b303b:#bf616a:#a3be8c:#ebcb8b:#8fa1b3:#b48ead:#96b5b4:#c0c5ce:#65737e:#bf616a:#a3be8c:#ebcb8b:#8fa1b3:#b48ead:#96b5b4:#eff1f5'
-gsettings set org.pantheon.terminal.settings background '#2b303b'
+gsettings set org.pantheon.terminal.settings background '#2b2f3a'
 gsettings set org.pantheon.terminal.settings foreground '#c0c5ce'
 gsettings set org.pantheon.terminal.settings cursor-color '#c0c5ce'
 gsettings set org.pantheon.terminal.settings cursor-shape 'I-Beam'
