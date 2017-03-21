@@ -1,8 +1,8 @@
 # Elementary Config
 
-**Elementary Config** is a set of resources and instructions I follow to set up a new development and working environment on  [Elementary OS](https://elementary.io) powered machine.
+**Elementary Config** is a set of resources and instructions I follow to set up a new development and working environment on  [elementary OS](https://elementary.io) powered machine.
 
-**Compatible with the latest 0.4 Loki release.**
+![elementary OS Version](https://img.shields.io/badge/-0.4%20Loki-64b9f1.svg?logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAABjUlEQVQ4T13SPcjPYRTG8c%2BFwWuJsJiYJCLEyqIICSmSSGGgDDIwCIW8FLJTYvESJvUYngkZKINVGURSSo9SnqNb91%2F%2F3NPvdzrfc65znRNDr6rm4igW9%2FAvTMR73EjyZZCewUdV7cBenMcntP%2FpeIQJOIU7Se435i%2FYobW922HMw8Ve9DJa8nNcw2iD0%2BXdwmbsajKTnBhSMqN32lJVrXNTcKCB5%2FAMb%2FESK5P8HALbjE%2BSbOzqVmFTAx8nadV2Yk2SY%2F8Ztg7Lk1zp4Hw8bOCjJFur6jQ%2BJGmy%2F76qmoJ7zbQk33vsLhY28EGSbVV1HGNJbvaEybiNq0le9VgzbjaWNvBpkk1VtQKXkqyrqkW4gHNJXndoDzZgNx408CxGkoxW1Qja0n%2FgSJLPVTULZzANh7CsFRiso%2B2oSWuujmE93mAmpnYl96uqOdzWsX9wANt78sEk41XVdrcAH5N861IbdL0dQpKHwyfX4H19rhf%2FrWQ1TuJWg%2F6d3JD9c9psWILfGMckvOtH%2FnWQ%2BwddkrYPQjXONwAAAABJRU5ErkJggg%3D%3D)
 
 ## Checklist
 
@@ -17,43 +17,12 @@
 ### 1. Prep Elementary OS
 
 - Install software packages and assets using [install.sh](install.sh) execution
-- Using Elementary Tweaks change:
-  - Icon theme to [Paper](https://snwh.org/paper)
-  - Window control layout to `OS X`
-  - GTK+ theme to `OSX-like`
-  - Disable category switch for "Applications" menu
-  - System fonts:
-
-| Property       | Name          | Weight     | Size |
-|----------------|---------------|------------|------|
-| Default font   | SF UI Display | Normal     | 9    |
-| Document font  | SF UI Text    | Regular G3 | 10   |
-| Monospace font | SF Mono       | Regular    | 10   |
-| Titlebar font  | SF UI Display | Medium     | 9    |
-
-- Set up *window* keyboard shortcuts:
-
-| Action            | Shortcut       |
-|-------------------|----------------|
-| Maximize          | ⌘ · Ctrl · ↑   |
-| Unmaximize        | ⌘ · Ctrl · ↓   |
-| Toggle Fullscreen | ⌘ · Ctrl · F11 |
-| Tile Left         | ⌘ · Ctrl · ←   |
-| Tile Right        | ⌘ · Ctrl · →   |
-
-- Set up *custom* keyboard shortcuts:
-
-| Action          | Shortcut      |
-|-----------------|---------------|
-| lxtask          | Ctrl · Escape |
-| pantheon-files  | ⌘ · E         |
-| screenshot-tool | Print         |
+- Customize system appearance using [appearance.sh](appearance.sh) execution
 
 ### 2. Prep Terminal
 
-- Background color: `#26282d`
-- Append `gtk-menu-bar-accel=""` to `~/.config/gtk-3.0/settings.ini` for proper `F10` key usage
-- `.bashrc` customizations:
+- Execute [terminal/ocean-theme.sh](terminal/ocean-theme.sh)
+- `~/.bashrc` customizations:
   - Uncomment `force_color_prompt=yes` for a colored prompt
   - Custom prompt format:
 
@@ -61,12 +30,14 @@
   parse_git_branch() {
        git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
   }
+  custom_prompt() {
+       echo "\[$(tput bold)\]\[$(tput setaf $1)\]➜ \[$(tput setaf 6)\]\w\[$(tput setaf 3)\]\$(parse_git_branch) \[$(tput sgr0)\]"
+  }
   if [ "$color_prompt" = yes ]; then
        if [ "$EUID" -ne 0 ]; then
-            PS1='${debian_chroot:+($debian_chroot)}\[\033[00m\]➜ \[\e[0;37;1m\]\w\[\e[33;1m\]$(parse_git_branch)\[\033[00m\] '
-       else
-            # Fill starting arrow with red color if sudo
-            PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]➜ \[\e[0;37;1m\]\w\[\e[33;1m\]$(parse_git_branch)\[\033[00m\] '
+            PS1=$(custom_prompt 5)
+       else # if sudoer
+            PS1=$(custom_prompt 9)
        fi
   else
        PS1='${debian_chroot:+($debian_chroot)}➜ \w$(parse_git_branch)\$ '

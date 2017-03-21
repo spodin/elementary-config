@@ -102,25 +102,14 @@ sudo add-apt-repository ppa:philip.scott/elementary-tweaks -y
 sudo apt-get update
 sudo apt-get install elementary-tweaks -y
 
-## Paper Icons Theme (https://snwh.org/paper)
-sudo add-apt-repository ppa:snwh/pulp -y
-sudo apt-get update
-sudo apt-get install paper-icon-theme -y
-
 ## LXTask Task Manager
 sudo apt-get install lxtask -y
 
 # ASSETS INSTALLATION
 # -------------------
 
-## SF Open Type Font
-sudo unzip assets/sf-font-otf.zip -d /usr/share/fonts/opentype/sf
-
-## OSX Like Theme
-sudo unzip assets/osx-like-theme.zip -d /usr/share/themes/OSX-like
-
 ## UnRar Library
-sudo gdebi assets/libunrar*.deb
+sudo gdebi bin/libunrar*.deb
 
 ## Copy Git Configuration with Replacement
 yes | cp -rf .gitconfig ~/
