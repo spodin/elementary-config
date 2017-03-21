@@ -21,14 +21,14 @@ sudo unzip fonts/sf-font-otf.zip -d /usr/share/fonts/opentype/sf
 gsettings set org.gnome.desktop.interface font-name 'SF UI Display 9'
 gsettings set org.gnome.desktop.interface document-font-name 'SF UI  Text 10'
 gsettings set org.gnome.desktop.interface monospace-font-name 'SF Mono Extra-Condensed 10'
-gsettings get org.gnome.desktop.wm.preferences titlebar-font 'SF UI Display Medium 9'
+gsettings set org.gnome.desktop.wm.preferences titlebar-font 'SF UI Display Medium 9'
 
 ## Set up window keyboard shortcuts
 gsettings set org.gnome.desktop.wm.keybindings maximize "['<Primary><Super>Up']"
 gsettings set org.gnome.desktop.wm.keybindings unmaximize "['<Primary><Super>Down']"
 gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['<Primary><Super>F11']"
 gsettings set org.gnome.mutter.keybindings toggle-tiled-left "['<Control><Super>Left']"
-gsettings get org.gnome.mutter.keybindings toggle-tiled-right "['<Control><Super>Right']"
+gsettings set org.gnome.mutter.keybindings toggle-tiled-right "['<Control><Super>Right']"
 
 ## Set up custom keyboard shortcuts
 gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/']"
