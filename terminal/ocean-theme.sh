@@ -5,8 +5,8 @@ gsettings set org.pantheon.terminal.settings palette '#2b303b:#bf616a:#a3be8c:#e
 gsettings set org.pantheon.terminal.settings background '#2b303b'
 gsettings set org.pantheon.terminal.settings foreground '#c0c5ce'
 gsettings set org.pantheon.terminal.settings cursor-color '#c0c5ce'
-gsettings get org.pantheon.terminal.settings cursor-shape 'I-Beam'
-gsettings get org.pantheon.terminal.settings tab-bar-behavior 'Hide When Single Tab'
+gsettings set org.pantheon.terminal.settings cursor-shape 'I-Beam'
+gsettings set org.pantheon.terminal.settings tab-bar-behavior 'Hide When Single Tab'
 
 ## Elementary OS default properties (uncomment if necessary)
 #gsettings set org.pantheon.terminal.settings palette '#073642:#dc322f:#859900:#b58900:#268bd2:#ec0048:#2aa198:#94a3a5:#586e75:#cb4b16:#859900:#b58900:#268bd2:#d33682:#2aa198:#6c71c4'
