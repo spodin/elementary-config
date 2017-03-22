@@ -37,6 +37,9 @@ sudo add-apt-repository ppa:git-core/ppa -y
 sudo apt-get update
 sudo apt-get install git -y
 
+## Text-mode Interface for Git (https://github.com/jonas/tig)
+sudo apt-get install tig -y
+
 ## Apache Maven (https://maven.apache.org)
 sudo apt-get install maven -y
 
