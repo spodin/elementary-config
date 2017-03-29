@@ -40,7 +40,7 @@ sudo apt-get install git -y
 ## Text-mode Interface for Git (https://github.com/jonas/tig)
 sudo apt-get install tig -y
 
-## GitKraken
+## GitKraken (https://www.gitkraken.com)
 wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
 sudo gdebi --non-interactive gitkraken-amd64.deb
 
