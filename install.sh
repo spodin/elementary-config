@@ -17,15 +17,15 @@ sudo apt-get install software-properties-common -y
 
 ## Google Chrome (https://www.google.com/chrome)
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo gdebi google-chrome-stable_current_*.deb
+sudo gdebi --non-interactive google-chrome-stable_current_*.deb
 
 ## Viber Messenger (https://www.viber.com/en)
 wget http://download.cdn.viber.com/cdn/desktop/Linux/viber.deb
-sudo gdebi viber.deb
+sudo gdebi --non-interactive viber.deb
 
 ## Skype for Linux (https://community.skype.com/t5/Linux/Where-to-get-the-latest-Skype-for-Linux-Alpha/td-p/4536964)
 wget https://repo.skype.com/latest/skypeforlinux-64.deb
-sudo gdebi skypeforlinux-64.deb
+sudo gdebi --non-interactive skypeforlinux-64.deb
 
 ## Oracle JDK 8 (http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 sudo add-apt-repository ppa:webupd8team/java -y
@@ -42,7 +42,7 @@ sudo apt-get install tig -y
 
 ## GitKraken
 wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
-sudo gdebi gitkraken-amd64.deb
+sudo gdebi --non-interactive gitkraken-amd64.deb
 
 ## Apache Maven (https://maven.apache.org)
 sudo apt-get install maven -y
@@ -116,7 +116,7 @@ sudo apt-get install lxtask -y
 # -------------------
 
 ## UnRar Library
-sudo gdebi bin/libunrar*.deb
+sudo gdebi --non-interactive bin/libunrar*.deb
 
 ## Copy Git Configuration with Replacement
 yes | cp -rf .gitconfig ~/
