@@ -71,6 +71,9 @@
   alias recent='git for-each-ref --sort=-committerdate refs/heads/'
   alias branch_new="git for-each-ref --sort=-committerdate refs/heads/ --format='%(refname:short)'"
 
+  ## Systemctl OpenVPN Shorthand
+  vpn() { sudo systemctl $1 openvpn@$2; }
+
   ## Git branch switching
   alias master='git co master'
   ```
