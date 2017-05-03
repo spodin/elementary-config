@@ -29,6 +29,7 @@ sudo gdebi --non-interactive skypeforlinux-64.deb
 
 ## Oracle JDK 8 (http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 sudo add-apt-repository ppa:webupd8team/java -y
+
 sudo apt-get update
 sudo apt-get install oracle-java8-installer -y
 
@@ -103,6 +104,11 @@ sudo chmod a+rx /usr/local/bin/youtube-dl
 
 ## XClip (https://github.com/astrand/xclip)
 sudo apt-get install xclip
+
+## Diodon Clipboard Manager (https://launchpad.net/diodon)
+sudo apt-add-repository ppa:diodon-team/stable -y
+sudo apt-get update
+sudo apt-get install diodon -y
 
 ## Elementary Tweaks (https://github.com/elementary-tweaks/elementary-tweaks)
 sudo add-apt-repository ppa:philip.scott/elementary-tweaks -y
