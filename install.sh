@@ -103,7 +103,7 @@ sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtub
 sudo chmod a+rx /usr/local/bin/youtube-dl
 
 ## XClip (https://github.com/astrand/xclip)
-sudo apt-get install xclip
+sudo apt-get install xclip -y
 
 ## Diodon Clipboard Manager (https://launchpad.net/diodon)
 sudo apt-add-repository ppa:diodon-team/stable -y
