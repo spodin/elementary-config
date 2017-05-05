@@ -18,10 +18,11 @@ gsettings set org.pantheon.desktop.slingshot show-category-filter false
 
 ## Unzip and change system default fonts
 sudo unzip fonts/sf-font-otf.zip -d /usr/share/fonts/opentype/sf
-gsettings set org.gnome.desktop.interface font-name 'SF UI Display 9'
-gsettings set org.gnome.desktop.interface document-font-name 'SF UI  Text 10'
-gsettings set org.gnome.desktop.interface monospace-font-name 'SF Mono Extra-Condensed 10'
-gsettings set org.gnome.desktop.wm.preferences titlebar-font 'SF UI Display 10'
+sudo fc-cache -fv
+gsettings set org.gnome.desktop.interface font-name 'SF UI Text 9'
+gsettings set org.gnome.desktop.interface document-font-name 'SF UI Text 10'
+gsettings set org.gnome.desktop.interface monospace-font-name 'SF Mono Regular 10'
+gsettings set org.gnome.desktop.wm.preferences titlebar-font 'SF UI Text 10'
 
 ## Set up window keyboard shortcuts
 gsettings set org.gnome.desktop.wm.keybindings maximize "['<Primary><Super>Up']"

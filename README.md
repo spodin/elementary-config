@@ -83,7 +83,7 @@
 - [Download](https://www.jetbrains.com/idea/specials/idea/idea.html) Linux-related distribution (.tar.gz)
 - Appearance & behavior customizations (Appearance ⯈ UI Options):
   - Theme: Darcula
-  - Override default fonts by: SF UI Display (size: 12-13)
+  - Override default fonts by: SF UI Text (size: 12)
 - Editor customizations (Colors & Fonts ⯈ Font ⯈ Editor Font):
   - Primary font: Monospaced or [FiraCode](https://github.com/tonsky/FiraCode) (size: 14)
 - Code style (Code Style ⯈ Java ⯈ Wrapping and Braces ⯈ Chained method calls):
