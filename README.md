@@ -14,7 +14,7 @@
 
 ---
 
-### 1. Prep Elementary OS
+### 1. Prep elementary OS
 
 - Install software packages and assets using [install.sh](install.sh) execution
 - Customize system appearance using [appearance.sh](appearance.sh) execution
