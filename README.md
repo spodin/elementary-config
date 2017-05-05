@@ -118,14 +118,14 @@
 
 - Change fonts:
 
-| Property        | Name          | Weight     | Size |
-|-----------------|---------------|------------|------|
-| Main font       | SF UI Display | Normal     | 11   |
-| Editor font     | SF Mono       | Light      | 10   |
-| Viewer font     | SF Mono       | Light      | 10   |
-| ViewerBook font | SF UI Text    | Regular G3 | 10   |
-| Log font        | SF Mono       | Light      | 10   |
-| Console font    | SF Mono       | Light      | 10   |
+| Property        | Name       | Weight  | Size |
+|-----------------|------------|---------|------|
+| Main font       | SF UI Text | Regular | 11   |
+| Editor font     | SF Mono    | Regular | 10   |
+| Viewer font     | SF Mono    | Regular | 10   |
+| ViewerBook font | SF UI Text | Regular | 10   |
+| Log font        | SF Mono    | Regular | 10   |
+| Console font    | SF Mono    | Regular | 10   |
 
 - Command for running terminal: `pantheon-terminal -w %u`
 
