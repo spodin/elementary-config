@@ -117,6 +117,9 @@ sudo apt-get install elementary-tweaks -y
 ## LXTask Task Manager
 sudo apt-get install lxtask -y
 
+## Transmission BitTorrent Client (https://transmissionbt.com)
+sudo apt-get install transmission
+
 # ASSETS INSTALLATION
 # -------------------
 
