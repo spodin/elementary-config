@@ -30,9 +30,6 @@ gsettings set org.gnome.desktop.wm.keybindings unmaximize "['<Primary><Super>Dow
 gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['<Primary><Super>F11']"
 gsettings set org.gnome.mutter.keybindings toggle-tiled-left "['<Control><Super>Left']"
 gsettings set org.gnome.mutter.keybindings toggle-tiled-right "['<Control><Super>Right']"
-### Replace Alt-Tab with arrow keys
-gsettings set org.gnome.desktop.wm.keybindings switch-windows "['<Primary><Alt>Right']"
-gsettings set org.gnome.desktop.wm.keybindings switch-windows-backward "['<Primary><Alt>Left']"
 
 ## Set up custom keyboard shortcuts
 gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/']"
