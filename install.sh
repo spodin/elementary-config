@@ -128,3 +128,7 @@ sudo gdebi --non-interactive bin/libunrar*.deb
 
 ## Copy Git Configuration with Replacement
 yes | cp -rf .gitconfig ~/
+
+## Global `.gitignore`
+yes | cp -rf .gitignore_global ~/
+git config --global core.excludesfile ~/.gitignore_global
