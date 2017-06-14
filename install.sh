@@ -132,3 +132,14 @@ yes | cp -rf .gitconfig ~/
 ## Global `.gitignore`
 yes | cp -rf .gitignore_global ~/
 git config --global core.excludesfile ~/.gitignore_global
+
+# VIDEO, AUDIO
+# ------------
+
+## Sound Converter (http://soundconverter.org)
+#sudo apt-get install soundconverter -y
+
+## EasyTAG (https://wiki.gnome.org/Apps/EasyTAG)
+#sudo add-apt-repository ppa:amigadave/ppa -y
+#sudo apt-get update
+#sudo apt-get install easytag -y
