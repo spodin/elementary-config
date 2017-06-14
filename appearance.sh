@@ -31,6 +31,11 @@ gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['<Primary><Su
 gsettings set org.gnome.mutter.keybindings toggle-tiled-left "['<Control><Super>Left']"
 gsettings set org.gnome.mutter.keybindings toggle-tiled-right "['<Control><Super>Right']"
 
+## Set up volume control shortcuts
+gsettings set org.gnome.settings-daemon.plugins.media-keys volume-up "<Alt><Super>F12"
+gsettings set org.gnome.settings-daemon.plugins.media-keys volume-down "<Alt><Super>F11"
+gsettings set org.gnome.settings-daemon.plugins.media-keys volume-mute "<Alt><Super>F10"
+
 ## Set up custom keyboard shortcuts
 gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/']"
 
