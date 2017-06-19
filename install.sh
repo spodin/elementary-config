@@ -5,6 +5,7 @@ sudo apt-get purge midori -y
 sudo apt-get purge pantheon-mail -y
 sudo apt-get purge audience -y
 sudo apt-get purge simple-scan -y
+sudo apt-get purge epiphany-browser -y
 
 ## System Update
 sudo apt-get update && sudo apt-get dist-upgrade
