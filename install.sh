@@ -10,7 +10,7 @@ sudo apt-get purge epiphany-browser -y
 sudo apt-get update && sudo apt-get dist-upgrade
 
 ## Gdebi
-sudo apt install gdebi
+sudo apt install gdebi -y
 
 ## Software Properties Common to enable PPA
 sudo apt-get install software-properties-common -y
