@@ -127,10 +127,10 @@ sudo apt-get install transmission -y
 sudo gdebi --non-interactive bin/libunrar*.deb
 
 ## Copy Git Configuration with Replacement
-yes | cp -rf .gitconfig ~/
+yes | cp -rf dotfiles/.gitconfig ~/
 
 ## Global `.gitignore`
-yes | cp -rf .gitignore_global ~/
+yes | cp -rf dotfiles/.gitignore_global ~/
 git config --global core.excludesfile ~/.gitignore_global
 
 # VIDEO, AUDIO
