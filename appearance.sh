@@ -24,6 +24,11 @@ gsettings set org.gnome.desktop.interface document-font-name 'SF UI Text 10'
 gsettings set org.gnome.desktop.interface monospace-font-name 'SF Mono Regular 10'
 gsettings set org.gnome.desktop.wm.preferences titlebar-font 'SF UI Text 10'
 
+## TIP
+## For getting names of specific keyboard buttons:
+##   - sudo apt-get install xbindkeys
+##   - sudo xbindkeys -k
+
 ## Set up window keyboard shortcuts
 gsettings set org.gnome.desktop.wm.keybindings maximize "['<Primary><Super>Up']"
 gsettings set org.gnome.desktop.wm.keybindings unmaximize "['<Primary><Super>Down']"
