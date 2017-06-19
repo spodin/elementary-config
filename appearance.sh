@@ -6,12 +6,12 @@ sudo apt-get update
 sudo apt-get install paper-icon-theme -y
 gsettings set org.gnome.desktop.interface icon-theme 'Paper'
 
-## Change window control layout
-gsettings set org.pantheon.desktop.gala.appearance button-layout 'close,minimize,maximize'
-
 ## Unzip and set GTK+ theme
 sudo unzip themes/osx-like-theme.zip -d /usr/share/themes/OSX-like
 gsettings set org.gnome.desktop.interface gtk-theme 'OSX-like'
+
+## Change window control layout
+gsettings set org.pantheon.desktop.gala.appearance button-layout 'close,minimize,maximize'
 
 ## Disable category switch for `Applications` menu
 gsettings set org.pantheon.desktop.slingshot show-category-filter false
