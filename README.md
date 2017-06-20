@@ -31,7 +31,7 @@ rm master.zip
 ### 2. Prep IntelliJ IDEA
 
 - [Download](https://www.jetbrains.com/idea/specials/idea/idea.html) Linux-related distribution (.tar.gz)
-- File ⯈ Import Settings... from `idea-settings.jar`
+- File ⯈ Import Settings... from `apps/idea-settings.jar`
 
 ### 3. Prep Google Chrome
 
