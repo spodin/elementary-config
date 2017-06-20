@@ -18,7 +18,6 @@ rm master.zip
 1. [OS](#1-prep-elementary-os)
 2. [IntelliJ IDEA](#3-prep-intellij-idea)
 3. [Google Chrome](#4-prep-google-chrome)
-4. [Double Commander](#5-customize-double-commander)
 
 ---
 
@@ -49,21 +48,6 @@ rm master.zip
   - [PostMan](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?utm_source=chrome-app-launcher-info-dialog)
   - [Octotree](https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc?utm_source=chrome-app-launcher-info-dialog)
 - Install [Apple Gray PixelPerfect Mac OS Match](https://chrome.google.com/webstore/detail/apple-gray-pixelperfect-m/oknopifggnllajnlkbomjflgbgjhpaej) theme.
-
-### 4. Customize Double Commander
-
-- Change fonts:
-
-| Property        | Name       | Weight  | Size |
-|-----------------|------------|---------|------|
-| Main font       | SF UI Text | Regular | 11   |
-| Editor font     | SF Mono    | Regular | 10   |
-| Viewer font     | SF Mono    | Regular | 10   |
-| ViewerBook font | SF UI Text | Regular | 10   |
-| Log font        | SF Mono    | Regular | 10   |
-| Console font    | SF Mono    | Regular | 10   |
-
-- Command for running terminal: `pantheon-terminal -w %u`
 
 ## Final View Screenshot
 
