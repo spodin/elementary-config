@@ -1,6 +1,6 @@
 #!/bin/bash
 
-## Remove Midori Browser, Mail (Geary), Audience and Simple Scan
+## Purge unused applications
 sudo apt-get purge pantheon-mail -y
 sudo apt-get purge audience -y
 sudo apt-get purge simple-scan -y
