@@ -24,9 +24,9 @@ rm master.zip
 
 ### 1. Prep elementary OS
 
-- Install software packages and assets using [install.sh](install.sh) execution
-- Customize system appearance using [appearance.sh](appearance.sh) execution
-- Customize terminal using [terminal/ocean-theme.sh](terminal/ocean-theme.sh) execution 
+- `./install.sh`
+- `./appearance.sh`
+- `./terminal/ocean-theme.sh`
 
 ### 2. Prep IntelliJ IDEA
 
