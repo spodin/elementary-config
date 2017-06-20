@@ -31,21 +31,7 @@ rm master.zip
 ### 2. Prep IntelliJ IDEA
 
 - [Download](https://www.jetbrains.com/idea/specials/idea/idea.html) Linux-related distribution (.tar.gz)
-- Appearance & behavior customizations (Appearance ⯈ UI Options):
-  - Theme: Darcula
-  - Override default fonts by: SF UI Text (size: 12)
-- Editor customizations (Colors & Fonts ⯈ Font ⯈ Editor Font):
-  - Primary font: Monospaced or [FiraCode](https://github.com/tonsky/FiraCode) (size: 14)
-- Code style (Code Style ⯈ Java ⯈ Wrapping and Braces ⯈ Chained method calls):
-  - Align when multiline: `true`
-- Enable zero latency typing by appending `editor.zero.latency.typing=true` to `idea.properties`
-- Install plugins:
-  - [SonarLint](https://plugins.jetbrains.com/plugin/7973)
-  - [Key Promoter](https://plugins.jetbrains.com/plugin/4455)
-  - [CodeGlance](https://plugins.jetbrains.com/plugin/7275)
-  - [CheckStyle-IDEA](https://plugins.jetbrains.com/plugin/1065)
-  - [GitLab Projects](https://plugins.jetbrains.com/plugin/7975)
-  - [Lombok Plugin](https://plugins.jetbrains.com/plugin/6317)
+- File ⯈ Import Settings... from `idea-settings.jar`
 
 ### 3. Prep Google Chrome
 
