@@ -16,10 +16,9 @@ rm master.zip
 ## Checklist
 
 1. [OS](#1-prep-elementary-os)
-2. [Terminal](#2-prep-terminal)
-3. [IntelliJ IDEA](#3-prep-intellij-idea)
-4. [Google Chrome](#4-prep-google-chrome)
-5. [Double Commander](#5-customize-double-commander)
+2. [IntelliJ IDEA](#3-prep-intellij-idea)
+3. [Google Chrome](#4-prep-google-chrome)
+4. [Double Commander](#5-customize-double-commander)
 
 ---
 
@@ -27,67 +26,9 @@ rm master.zip
 
 - Install software packages and assets using [install.sh](install.sh) execution
 - Customize system appearance using [appearance.sh](appearance.sh) execution
+- Customize terminal using [terminal/ocean-theme.sh](terminal/ocean-theme.sh) execution 
 
-### 2. Prep Terminal
-
-- Execute [terminal/ocean-theme.sh](terminal/ocean-theme.sh)
-- `~/.bashrc` customizations:
-  - Uncomment `force_color_prompt=yes` for a colored prompt
-  - Custom prompt format:
-
-  ```
-  parse_git_branch() {
-       git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-  }
-  custom_prompt() {
-       echo "\[$(tput bold)\]\[$(tput setaf $1)\]➜ \[$(tput setaf 6)\]\w\[$(tput setaf 3)\]\$(parse_git_branch) \[$(tput sgr0)\]"
-  }
-  if [ "$color_prompt" = yes ]; then
-       if [ "$EUID" -ne 0 ]; then
-            PS1=$(custom_prompt 5)
-       else # if sudoer
-            PS1=$(custom_prompt 9)
-       fi
-  else
-       PS1='${debian_chroot:+($debian_chroot)}➜ \w$(parse_git_branch)\$ '
-  fi
-  unset color_prompt force_color_prompt
-  ```
-
-  - Aliases:
-
-  ```
-  ## Shortcuts
-  alias editgit='scratch-text-editor ~/.gitconfig'
-  alias editbash='scratch-text-editor ~/.bashrc'
-  alias resource='source ~/.bashrc && echo "Done!"'
-
-  ## Enable Copy-Paste Using XClip
-  alias c="xclip -selection clipboard"
-  alias p="xclip -selection clipboard -o"   
-
-  ## Git commands
-  alias log='git log'
-  alias diff='git diff'
-  alias branch='git branch -a'
-  alias st='git status'
-  alias fetch='git fetch'
-  alias push='git push origin head'
-  alias pull='git pull'
-  alias fp='fetch && pull'
-  alias gmm='git merge master'
-  alias gmghp='git merge gh-pages'
-  alias recent='git for-each-ref --sort=-committerdate refs/heads/'
-  alias branch_new="git for-each-ref --sort=-committerdate refs/heads/ --format='%(refname:short)'"
-
-  ## Systemctl OpenVPN Shorthand
-  vpn() { sudo systemctl $1 openvpn@$2; }
-
-  ## Git branch switching
-  alias master='git co master'
-  ```
-
-### 3. Prep IntelliJ IDEA
+### 2. Prep IntelliJ IDEA
 
 - [Download](https://www.jetbrains.com/idea/specials/idea/idea.html) Linux-related distribution (.tar.gz)
 - Appearance & behavior customizations (Appearance ⯈ UI Options):
@@ -106,7 +47,7 @@ rm master.zip
   - [GitLab Projects](https://plugins.jetbrains.com/plugin/7975)
   - [Lombok Plugin](https://plugins.jetbrains.com/plugin/6317)
 
-### 4. Prep Google Chrome
+### 3. Prep Google Chrome
 
 - Install extensions:
   - [AdBlock](https://chrome.google.com/webstore/detail/adblock/gighmmpiobklfepjocnamgkkbiglidom?utm_source=chrome-app-launcher-info-dialog)
@@ -123,7 +64,7 @@ rm master.zip
   - [Octotree](https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc?utm_source=chrome-app-launcher-info-dialog)
 - Install [Apple Gray PixelPerfect Mac OS Match](https://chrome.google.com/webstore/detail/apple-gray-pixelperfect-m/oknopifggnllajnlkbomjflgbgjhpaej) theme.
 
-### 5. Customize Double Commander
+### 4. Customize Double Commander
 
 - Change fonts:
 
