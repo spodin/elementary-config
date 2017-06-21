@@ -83,6 +83,11 @@ sudo add-apt-repository ppa:libreoffice/libreoffice-5-2 -y
 sudo apt-get update
 sudo apt-get install libreoffice -y
 
+## LibreOffice Papirus Theme (https://github.com/PapirusDevelopmentTeam/papirus-libreoffice-theme)
+sudo add-apt-repository ppa:papirus/papirus -y
+sudo apt-get update
+sudo apt-get install libreoffice-style-papirus -y
+
 ## GParted (http://gparted.org)
 sudo apt-get install gparted -y
 
