@@ -109,10 +109,8 @@ sudo chmod a+rx /usr/local/bin/youtube-dl
 ## XClip (https://github.com/astrand/xclip)
 sudo apt-get install xclip -y
 
-## Diodon Clipboard Manager (https://launchpad.net/diodon)
-sudo apt-add-repository ppa:diodon-team/stable -y
-sudo apt-get update
-sudo apt-get install diodon -y
+## Glipper Clipboard Manager (https://launchpad.net/glipper)
+sudo apt-get install glipper -y
 
 ## Elementary Tweaks (https://github.com/elementary-tweaks/elementary-tweaks)
 sudo add-apt-repository ppa:philip.scott/elementary-tweaks -y
