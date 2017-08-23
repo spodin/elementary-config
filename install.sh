@@ -40,10 +40,6 @@ sudo apt-get install git -y
 ## Text-mode Interface for Git (https://github.com/jonas/tig)
 sudo apt-get install tig -y
 
-## GitKraken (https://www.gitkraken.com)
-wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
-sudo gdebi --non-interactive gitkraken-amd64.deb
-
 ## Apache Maven (https://maven.apache.org)
 sudo apt-get install maven -y
 
