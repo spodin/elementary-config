@@ -16,8 +16,8 @@ rm master.zip
 ## Checklist
 
 1. [OS](#1-prep-elementary-os)
-2. [IntelliJ IDEA](#3-prep-intellij-idea)
-3. [Google Chrome](#4-prep-google-chrome)
+2. [IntelliJ IDEA](#2-prep-intellij-idea)
+3. [Google Chrome](#3-prep-google-chrome)
 
 ---
 
