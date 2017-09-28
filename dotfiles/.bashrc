@@ -208,3 +208,19 @@ vpn() { sudo systemctl $1 openvpn@$2; }
 
 ## Git branch switching
 alias master='git co master'
+
+## Switch Java versions
+setjdk() {
+    if [ -n "$1" ]; then
+        case "$1" in
+            --list)
+                echo "Available versions:"
+                update-java-alternatives --list
+                ;;
+            *)
+                sudo update-java-alternatives --set /usr/lib/jvm/java-$1-oracle
+                ;;
+        esac
+    else
+        echo $"Usage: $0 <--list | java version>"
+    fi
