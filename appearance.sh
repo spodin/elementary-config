@@ -36,6 +36,9 @@ gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['<Primary><Su
 gsettings set org.gnome.mutter.keybindings toggle-tiled-left "['<Control><Super>Left']"
 gsettings set org.gnome.mutter.keybindings toggle-tiled-right "['<Control><Super>Right']"
 
+## Disable Switch Group (default value: ['<Super>Above_Tab', '<Alt>Above_Tab'])
+gsettings set org.gnome.desktop.wm.keybindings switch-group []
+
 ## Set up custom keyboard shortcuts
 gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/']"
 
