@@ -116,6 +116,10 @@ sudo apt-get install lxtask -y
 ## Transmission BitTorrent Client (https://transmissionbt.com)
 sudo apt-get install transmission -y
 
+## Postman (https://www.getpostman.com)
+wget -O postman.tar.gz https://dl.pstmn.io/download/latest/linux64
+tar xf postman.tar.gz -C ~/workspace
+
 # ASSETS INSTALLATION
 # -------------------
 
