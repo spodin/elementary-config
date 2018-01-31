@@ -6,6 +6,9 @@ sudo apt-get update
 sudo apt-get install paper-icon-theme -y
 gsettings set org.gnome.desktop.interface icon-theme 'Paper'
 
+## Unzip extra icons images
+sudo unzip themes/extra-icons.zip -d ~/Icons
+
 ## Unzip and set GTK+ theme
 sudo unzip themes/osx-like-theme.zip -d /usr/share/themes/OSX-like
 gsettings set org.gnome.desktop.interface gtk-theme 'OSX-like'
