@@ -51,6 +51,10 @@ sudo apt-get install gradle-ppa -y
 ## pgAdmin3 (https://www.pgadmin.org)
 sudo apt-get install pgadmin3 -y
 
+## DBeaver (https://dbeaver.jkiss.org/download)
+wget -O dbeaver-ce.tar.gz https://dbeaver.jkiss.org/files/dbeaver-ce-latest-linux.gtk.x86_64.tar.gz
+tar xf dbeaver-ce.tar.gz -C ~/workspace
+
 ## Double Commander (http://doublecmd.sourceforge.net)
 sudo add-apt-repository ppa:alexx2000/doublecmd -y
 sudo apt-get update
