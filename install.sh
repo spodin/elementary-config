@@ -93,7 +93,8 @@ sudo apt update
 sudo apt install neofetch -y
 
 ## Jekyll (https://jekyllrb.com)
-sudo apt-get install jekyll -y
+sudo apt-get install ruby ruby-dev make gcc -y
+sudo gem install jekyll bundler
 
 ## VLC (http://www.videolan.org/vlc/index.html)
 sudo apt-get install vlc -y
