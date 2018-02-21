@@ -13,41 +13,37 @@ unzip master.zip && \
 rm master.zip
 ```
 
-## Checklist
+## Setup
 
-1. [OS](#1-prep-elementary-os)
-2. [IntelliJ IDEA](#2-prep-intellij-idea)
-3. [Google Chrome](#3-prep-google-chrome)
+1. `./install.sh`
+2. `./appearance.sh`
+3. `./terminal/ocean-theme.sh`
 
 ---
 
-### 1. Prep elementary OS
+### IntelliJ IDEA
 
-- `./install.sh`
-- `./appearance.sh`
-- `./terminal/ocean-theme.sh`
+1. [Download](https://www.jetbrains.com/idea/download/#section=linux) Linux-related distribution (.tar.gz)
+2. Import setting using File ⯈ Import Settings...
 
-### 2. Prep IntelliJ IDEA
+### New SSH Key Generation
 
-- [Download](https://www.jetbrains.com/idea/download/#section=linux) Linux-related distribution (.tar.gz)
-- Import setting using File ⯈ Import Settings...
+1. Create a new ssh key, using the provided email as a label
 
-### 3. Prep Google Chrome
+    ```
+    ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+    ```
 
-- Install extensions:
-  - [AdBlock](https://chrome.google.com/webstore/detail/adblock/gighmmpiobklfepjocnamgkkbiglidom?utm_source=chrome-app-launcher-info-dialog)
-  - [AdBlock Plus](https://chrome.google.com/webstore/detail/adblock-plus/cfhdojbkjhnklbpkdaibdccddilifddb?utm_source=chrome-app-launcher-info-dialog)
-  - [Checker Plus for Gmail™](https://chrome.google.com/webstore/detail/checker-plus-for-gmail/oeopbcgkkoapgobdbedcemjljbihmemj?utm_source=chrome-app-launcher-info-dialog)
-  - [Evernote Web Clipper](https://chrome.google.com/webstore/detail/evernote-web-clipper/pioclpoplcdbaefihamjohnefbikjilc?utm_source=chrome-app-launcher-info-dialog)
-  - [OneTab](https://chrome.google.com/webstore/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall?utm_source=chrome-app-launcher-info-dialog)
-  - [Save to Pocket](https://chrome.google.com/webstore/detail/save-to-pocket/niloccemoadcdkdjlinkgdfekeahmflj?utm_source=chrome-app-launcher-info-dialog)
-  - [TLDRify](https://chrome.google.com/webstore/detail/tldrify/dbphpdgmhigmaepjklmklmlcoinihjdo?utm_source=chrome-app-launcher-info-dialog)
-  - [Lingvo Translator+](https://chrome.google.com/webstore/detail/lingvo-translator%20/gjceecgpmolmpdeidmfehcfepdfmmffl?utm_source=chrome-app-launcher-info-dialog)
-  - [Papier](https://chrome.google.com/webstore/detail/papier/hhjeaokafplhjoogdemakihhdhffacia) or [Momentum](https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca?utm_source=chrome-app-launcher-info-dialog)
-  - [SmoothScroll](https://chrome.google.com/webstore/detail/smoothscroll/nbokbjkabcmbfdlbddjidfmibcpneigj?utm_source=chrome-app-launcher-info-dialog)
-  - [PostMan](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?utm_source=chrome-app-launcher-info-dialog)
-  - [Octotree](https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc?utm_source=chrome-app-launcher-info-dialog)
+2. Adding SSH key to the ssh-agent
 
-## Thanks To
+   1. Start the ssh-agent in the background
 
-- [yarik-vv](https://github.com/yarik-vv) / [OS-X-buttons](https://github.com/yarik-vv/OS-X-buttons)
+       ```
+       eval "$(ssh-agent -s)"
+       ```
+
+   2. Add SSH private key to the ssh-agent
+
+       ```
+       ssh-add ~/.ssh/id_rsa
+       ```
