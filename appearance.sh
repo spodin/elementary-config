@@ -62,3 +62,6 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 
 ### Replace Double Commander Configuration
 yes | cp -rf apps/doublecmd.xml ~/.config/doublecmd
+
+### Set `nicedark` as Midnight Commander Theme (themes are available in /usr/share/mc/skins/)
+sed -i 's/skin=default/skin=nicedark/g' ~/.config/mc/ini
