@@ -47,3 +47,7 @@ rm master.zip
        ```
        ssh-add ~/.ssh/id_rsa
        ```
+
+### AppCenter Applications
+
+- AppEditor
