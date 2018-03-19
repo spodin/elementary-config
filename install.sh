@@ -125,7 +125,7 @@ sudo apt-get install lxtask -y
 sudo apt-get install transmission -y
 
 ## Command Line HTTP Client (https://httpie.org)
-sudo apt-get install httpie
+sudo apt-get install httpie -y
 
 ## Postman (https://www.getpostman.com)
 #wget -O postman.tar.gz https://dl.pstmn.io/download/latest/linux64
