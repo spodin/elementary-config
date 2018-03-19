@@ -15,6 +15,9 @@ sudo apt install gdebi -y
 ## Software Properties Common to enable PPA
 sudo apt-get install software-properties-common -y
 
+## Software & Updates Application
+sudo apt-get install software-properties-gtk
+
 ## Google Chrome (https://www.google.com/chrome)
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo gdebi --non-interactive google-chrome-stable_current_*.deb
