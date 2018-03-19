@@ -124,9 +124,12 @@ sudo apt-get install lxtask -y
 ## Transmission BitTorrent Client (https://transmissionbt.com)
 sudo apt-get install transmission -y
 
+## Command Line HTTP Client (https://httpie.org)
+sudo apt-get install httpie
+
 ## Postman (https://www.getpostman.com)
-wget -O postman.tar.gz https://dl.pstmn.io/download/latest/linux64
-tar xf postman.tar.gz -C ~/workspace
+#wget -O postman.tar.gz https://dl.pstmn.io/download/latest/linux64
+#tar xf postman.tar.gz -C ~/workspace
 
 # DOCKER & DOCKER COMPOSE
 # For Docker Compose you should verify latest release version at:
