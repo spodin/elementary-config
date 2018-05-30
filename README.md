@@ -50,4 +50,4 @@ rm master.zip
 
 ### AppCenter Applications
 
-- AppEditor
+- [AppEditor](https://appcenter.elementary.io/com.github.donadigo.appeditor.desktop)
