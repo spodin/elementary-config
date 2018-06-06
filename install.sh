@@ -18,6 +18,9 @@ sudo apt-get install software-properties-common -y
 ## Software & Updates Application
 sudo apt-get install software-properties-gtk
 
+## PPA Purge
+sudo apt-get install ppa-purge
+
 ## Google Chrome (https://www.google.com/chrome)
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo gdebi --non-interactive google-chrome-stable_current_*.deb
@@ -39,6 +42,9 @@ sudo apt-get install oracle-java8-installer -y
 sudo add-apt-repository ppa:git-core/ppa -y
 sudo apt-get update
 sudo apt-get install git -y
+
+## Git Extras
+sudo apt-get install git-extras
 
 ## Text-mode Interface for Git (https://github.com/jonas/tig)
 sudo apt-get install tig -y
