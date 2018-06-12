@@ -210,6 +210,9 @@ vpn() { sudo systemctl $1 openvpn@$2; }
 ## Git branch switching
 alias master='git co master'
 
+## Get Window PID
+alias windowpid="xprop _NET_WM_PID | cut -d' ' -f3"
+
 ## Switch Java versions
 setjdk() {
     if [ -n "$1" ]; then
