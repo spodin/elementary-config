@@ -21,6 +21,9 @@ sudo apt-get install software-properties-gtk
 ## PPA Purge
 sudo apt-get install ppa-purge
 
+## Seahorse: Passwords and Encryption Keys Manager (https://wiki.gnome.org/Apps/Seahorse)
+sudo apt-get install seahorse
+
 ## Google Chrome (https://www.google.com/chrome)
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo gdebi --non-interactive google-chrome-stable_current_*.deb
