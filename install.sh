@@ -136,6 +136,10 @@ sudo apt-get install transmission -y
 ## Command Line HTTP Client (https://httpie.org)
 sudo apt-get install httpie -y
 
+## A cat(1) clone with syntax highlighting and Git integration (https://github.com/sharkdp/bat)
+wget https://github.com/sharkdp/bat/releases/download/v0.6.1/bat_0.6.1_amd64.deb
+sudo gdebi bat*
+
 ## Postman (https://www.getpostman.com)
 #wget -O postman.tar.gz https://dl.pstmn.io/download/latest/linux64
 #tar xf postman.tar.gz -C ~/workspace
