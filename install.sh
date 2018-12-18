@@ -166,13 +166,6 @@ sudo sh get-docker.sh
 ## UnRar Library
 sudo gdebi --non-interactive bin/libunrar*.deb
 
-## Copy Git Configuration with Replacement
-yes | cp -rf dotfiles/.gitconfig ~/
-
-## Global `.gitignore`
-yes | cp -rf dotfiles/.gitignore_global ~/
-git config --global core.excludesfile ~/.gitignore_global
-
 # VIDEO, AUDIO
 # ------------
 

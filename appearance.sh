@@ -65,8 +65,5 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/ command 'dbus-send --system --print-reply --dest=org.freedesktop.login1 /org/freedesktop/login1 "org.freedesktop.login1.Manager.Suspend" boolean:true'
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/ binding '<Primary><Super>Delete'
 
-### Replace Double Commander Configuration
-yes | cp -rf apps/doublecmd.xml ~/.config/doublecmd
-
 ### Set `nicedark` as Midnight Commander Theme (themes are available in /usr/share/mc/skins/)
 sed -i 's/skin=default/skin=nicedark/g' ~/.config/mc/ini
