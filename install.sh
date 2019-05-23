@@ -137,7 +137,7 @@ sudo apt-get install transmission -y
 sudo apt-get install httpie -y
 
 ## A cat(1) clone with syntax highlighting and Git integration (https://github.com/sharkdp/bat)
-wget https://github.com/sharkdp/bat/releases/download/v0.6.1/bat_0.6.1_amd64.deb
+wget https://github.com/sharkdp/bat/releases/download/v0.11.0/bat_0.11.0_amd64.deb
 sudo gdebi bat*
 
 ## Postman (https://www.getpostman.com)
