@@ -36,11 +36,6 @@ sudo gdebi --non-interactive viber.deb
 wget https://repo.skype.com/latest/skypeforlinux-64.deb
 sudo gdebi --non-interactive skypeforlinux-64.deb
 
-## Oracle JDK 8 (http://www.oracle.com/technetwork/java/javase/downloads/index.html)
-sudo add-apt-repository ppa:webupd8team/java -y
-sudo apt-get update
-sudo apt-get install oracle-java8-installer -y
-
 ## Git (https://git-scm.com)
 sudo add-apt-repository ppa:git-core/ppa -y
 sudo apt-get update
