@@ -149,11 +149,11 @@ curl -fsSL get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 
 ## Docker Compose (https://docs.docker.com/compose/install/#master-builds)
-#sudo curl -L https://github.com/docker/compose/releases/download/1.19.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+#sudo curl -L https://github.com/docker/compose/releases/download/1.24.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
 #sudo chmod +x /usr/local/bin/docker-compose
 
 ## Docker Compose Command-line completion (https://docs.docker.com/compose/completion)
-#sudo curl -L https://raw.githubusercontent.com/docker/compose/1.19.0/contrib/completion/bash/docker-compose -o /etc/bash_completion.d/docker-compose
+#sudo curl -L https://raw.githubusercontent.com/docker/compose/1.24.0/contrib/completion/bash/docker-compose -o /etc/bash_completion.d/docker-compose
 
 # ASSETS INSTALLATION
 # -------------------
