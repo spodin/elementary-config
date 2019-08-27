@@ -86,7 +86,7 @@ sudo apt install atom -y
 sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.py | sudo python -c "import sys; main=lambda:sys.stderr.write('Download failed\n'); exec(sys.stdin.read()); main()"
 
 ## LibreOffice (https://www.libreoffice.org)
-sudo add-apt-repository ppa:libreoffice/libreoffice-5-4 -y
+sudo add-apt-repository ppa:libreoffice/libreoffice-6-2 -y
 sudo apt-get update
 sudo apt-get install libreoffice -y
 
