@@ -28,20 +28,9 @@ sudo apt-get install seahorse
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo gdebi --non-interactive google-chrome-stable_current_*.deb
 
-## Viber Messenger (https://www.viber.com/en)
-wget http://download.cdn.viber.com/cdn/desktop/Linux/viber.deb
-sudo gdebi --non-interactive viber.deb
-
-## Skype for Linux (https://community.skype.com/t5/Linux/Where-to-get-the-latest-Skype-for-Linux-Alpha/td-p/4536964)
-wget https://repo.skype.com/latest/skypeforlinux-64.deb
-sudo gdebi --non-interactive skypeforlinux-64.deb
-
 ## Git (https://git-scm.com)
 sudo add-apt-repository ppa:git-core/ppa -y
 sudo apt-get install git -y
-
-## Git Extras
-sudo apt-get install git-extras
 
 ## Text-mode Interface for Git (https://github.com/jonas/tig)
 sudo apt-get install tig -y
@@ -52,9 +41,6 @@ sudo apt-get install maven -y
 ## Gradle (https://gradle.org)
 sudo add-apt-repository ppa:cwchien/gradle -y
 sudo apt-get install gradle-ppa -y
-
-## pgAdmin3 (https://www.pgadmin.org)
-sudo apt-get install pgadmin3 -y
 
 ## DBeaver (https://dbeaver.jkiss.org/download)
 wget -O dbeaver-ce.tar.gz https://dbeaver.jkiss.org/files/dbeaver-ce-latest-linux.gtk.x86_64.tar.gz
@@ -67,10 +53,6 @@ sudo apt-get install doublecmd-gtk -y
 ## Midnight Commander (https://midnight-commander.org)
 sudo add-apt-repository ppa:eugenesan/ppa -y
 sudo apt-get install mc -y
-
-## KeePass2 (http://keepass.info)
-sudo add-apt-repository ppa:jtaylor/keepass -y
-sudo apt-get install keepass2 -y
 
 ## Github Atom (https://atom.io)
 sudo add-apt-repository ppa:webupd8team/atom -y
