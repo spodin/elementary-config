@@ -38,7 +38,6 @@ sudo gdebi --non-interactive skypeforlinux-64.deb
 
 ## Git (https://git-scm.com)
 sudo add-apt-repository ppa:git-core/ppa -y
-sudo apt-get update
 sudo apt-get install git -y
 
 ## Git Extras
@@ -52,7 +51,6 @@ sudo apt-get install maven -y
 
 ## Gradle (https://gradle.org)
 sudo add-apt-repository ppa:cwchien/gradle -y
-sudo apt-get update
 sudo apt-get install gradle-ppa -y
 
 ## pgAdmin3 (https://www.pgadmin.org)
@@ -64,22 +62,18 @@ tar xf dbeaver-ce.tar.gz -C ~/workspace
 
 ## Double Commander (http://doublecmd.sourceforge.net)
 sudo add-apt-repository ppa:alexx2000/doublecmd -y
-sudo apt-get update
 sudo apt-get install doublecmd-gtk -y
 
 ## Midnight Commander (https://midnight-commander.org)
 sudo add-apt-repository ppa:eugenesan/ppa -y
-sudo apt-get update
 sudo apt-get install mc -y
 
 ## KeePass2 (http://keepass.info)
 sudo add-apt-repository ppa:jtaylor/keepass -y
-sudo apt-get update
 sudo apt-get install keepass2 -y
 
 ## Github Atom (https://atom.io)
 sudo add-apt-repository ppa:webupd8team/atom -y
-sudo apt update
 sudo apt install atom -y
 
 ## Calibre E-book Manager (https://calibre-ebook.com)
@@ -87,12 +81,10 @@ sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.py | 
 
 ## LibreOffice (https://www.libreoffice.org)
 sudo add-apt-repository ppa:libreoffice/libreoffice-6-2 -y
-sudo apt-get update
 sudo apt-get install libreoffice -y
 
 ## LibreOffice Papirus Theme (https://github.com/PapirusDevelopmentTeam/papirus-libreoffice-theme)
 sudo add-apt-repository ppa:papirus/papirus -y
-sudo apt-get update
 sudo apt-get install libreoffice-style-papirus -y
 
 ## GParted (http://gparted.org)
@@ -100,7 +92,6 @@ sudo apt-get install gparted -y
 
 ## Neofetch (https://github.com/dylanaraps/neofetch)
 sudo add-apt-repository ppa:dawidd0811/neofetch -y
-sudo apt update
 sudo apt install neofetch -y
 
 ## Jekyll (https://jekyllrb.com)
@@ -119,7 +110,6 @@ sudo apt-get install xclip -y
 
 ## Elementary Tweaks (https://github.com/elementary-tweaks/elementary-tweaks)
 sudo add-apt-repository ppa:philip.scott/elementary-tweaks -y
-sudo apt-get update
 sudo apt-get install elementary-tweaks -y
 
 ## LXTask Task Manager
@@ -169,5 +159,4 @@ sudo gdebi --non-interactive bin/libunrar*.deb
 
 ## EasyTAG (https://wiki.gnome.org/Apps/EasyTAG)
 #sudo add-apt-repository ppa:amigadave/ppa -y
-#sudo apt-get update
 #sudo apt-get install easytag -y
