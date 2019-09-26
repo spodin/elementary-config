@@ -21,10 +21,10 @@ gsettings set org.pantheon.desktop.slingshot show-category-filter false
 ## Unzip and change system default fonts
 sudo unzip fonts/sf-font-otf.zip -d /usr/share/fonts/opentype/sf
 sudo fc-cache -fv
-gsettings set org.gnome.desktop.interface font-name 'SF Pro Display 10'
+gsettings set org.gnome.desktop.interface font-name 'SF Pro Text 9'
 gsettings set org.gnome.desktop.interface document-font-name 'SF Pro Text 10'
-gsettings set org.gnome.desktop.interface monospace-font-name 'SF Mono Regular 10'
-gsettings set org.gnome.desktop.wm.preferences titlebar-font 'SF Pro Display 10'
+gsettings set org.gnome.desktop.interface monospace-font-name 'Menlo for Powerline 10'
+gsettings set org.gnome.desktop.wm.preferences titlebar-font 'SF Pro Text 9'
 
 ## TIP
 ## For getting names of specific keyboard buttons:
