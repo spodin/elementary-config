@@ -107,6 +107,12 @@ sudo apt-get install httpie -y
 wget https://github.com/sharkdp/bat/releases/download/v0.12.1/bat_0.12.1_amd64.deb
 sudo gdebi bat*
 
+## Z shell (Zsh)
+sudo apt-get install zsh
+sudo apt-get install powerline fonts-powerline
+git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+chsh -s /bin/zsh
+
 ## Postman (https://www.getpostman.com)
 #wget -O postman.tar.gz https://dl.pstmn.io/download/latest/linux64
 #tar xf postman.tar.gz -C ~/workspace
