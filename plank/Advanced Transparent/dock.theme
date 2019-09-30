@@ -1,0 +1,18 @@
+# Advanced Transparent Plank Theme
+
+[PlankTheme]
+TopRoundness=0
+BottomRoundness=0
+LineWidth=0
+
+[PlankDockTheme]
+TopPadding=-12
+BottomPadding=2
+IndicatorSize=2
+LaunchBounceTime=600
+LaunchBounceHeight=0.425
+
+GlowSize=30
+GlowTime=10000
+GlowPulseTime=2000
+UrgentHueShift=150
