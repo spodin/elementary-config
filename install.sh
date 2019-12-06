@@ -9,6 +9,7 @@ sudo apt-get update && sudo apt-get dist-upgrade
 
 sudo apt-get install software-properties-common -y
 sudo apt-get install software-properties-gtk -y
+sudo apt-get install net-tools -y
 sudo apt-get install ppa-purge -y
 
 sudo apt install gdebi -y
