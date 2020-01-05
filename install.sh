@@ -22,8 +22,7 @@ sudo apt-get install tig -y
 ## Z shell (Zsh)
 sudo apt-get install zsh
 sudo apt-get install powerline fonts-powerline
-git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
-chsh -s /bin/zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 ## Google Chrome (https://www.google.com/chrome)
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
