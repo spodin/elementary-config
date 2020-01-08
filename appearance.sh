@@ -8,10 +8,6 @@ gsettings set org.gnome.desktop.interface icon-theme 'Paper'
 ## Unzip extra icons images
 sudo unzip themes/extra-icons.zip -d ~/Icons
 
-## Unzip and set GTK+ theme
-sudo unzip themes/osx-like-theme.zip -d /usr/share/themes/OSX-like
-gsettings set org.gnome.desktop.interface gtk-theme 'OSX-like'
-
 ## Change window control layout
 gsettings set org.pantheon.desktop.gala.appearance button-layout 'close,minimize,maximize'
 gsettings set org.gnome.desktop.wm.preferences button-layout 'close,minimize,maximize'
