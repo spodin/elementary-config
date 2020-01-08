@@ -14,6 +14,7 @@ gsettings set org.gnome.desktop.interface gtk-theme 'OSX-like'
 
 ## Change window control layout
 gsettings set org.pantheon.desktop.gala.appearance button-layout 'close,minimize,maximize'
+gsettings set org.gnome.desktop.wm.preferences button-layout 'close,minimize,maximize'
 
 ## Unzip and change system default fonts
 sudo unzip fonts/sf-font-otf.zip -d /usr/share/fonts/opentype/sf
