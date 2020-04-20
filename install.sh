@@ -45,13 +45,6 @@ sudo apt-get install lxtask -y
 ## Seahorse: Passwords and Encryption Keys Manager (https://wiki.gnome.org/Apps/Seahorse)
 sudo apt-get install seahorse -y
 
-## Apache Maven (https://maven.apache.org)
-sudo apt-get install maven -y
-
-## Gradle (https://gradle.org)
-sudo add-apt-repository ppa:cwchien/gradle -y
-sudo apt-get install gradle-ppa -y
-
 ## DBeaver (https://dbeaver.jkiss.org/download)
 wget -O dbeaver-ce.tar.gz https://dbeaver.jkiss.org/files/dbeaver-ce-latest-linux.gtk.x86_64.tar.gz
 tar xf dbeaver-ce.tar.gz -C ~/workspace
