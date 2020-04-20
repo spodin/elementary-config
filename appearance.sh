@@ -1,8 +1,7 @@
 #!/bin/bash
 
 ## Install and apply `Paper Icons Theme` (https://snwh.org/paper)
-sudo add-apt-repository ppa:snwh/pulp -y
-sudo apt-get install paper-icon-theme -y
+sudo add-apt-repository ppa:snwh/pulp -y && sudo apt-get install paper-icon-theme -y
 gsettings set org.gnome.desktop.interface icon-theme 'Paper'
 
 ## Unzip extra icons images

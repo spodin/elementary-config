@@ -15,13 +15,12 @@ sudo apt-get install ppa-purge -y
 sudo apt install gdebi -y
 
 ## Git (https://git-scm.com)
-sudo add-apt-repository ppa:git-core/ppa -y
-sudo apt-get install git -y
+sudo add-apt-repository ppa:git-core/ppa -y && sudo apt-get install git -y
+
 sudo apt-get install tig -y
 
 ## Z shell (Zsh)
-sudo apt-get install zsh
-sudo apt-get install powerline fonts-powerline
+sudo apt-get install zsh powerline fonts-powerline
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 ## Google Chrome (https://www.google.com/chrome)
@@ -29,19 +28,16 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo gdebi --non-interactive google-chrome-stable_current_*.deb
 
 ## Midnight Commander (https://midnight-commander.org)
-sudo add-apt-repository ppa:eugenesan/ppa -y
-sudo apt-get install mc -y
+sudo add-apt-repository ppa:eugenesan/ppa -y && sudo apt-get install mc -y
 
 ## Double Commander (http://doublecmd.sourceforge.net)
-sudo add-apt-repository ppa:alexx2000/doublecmd -y
-sudo apt-get install doublecmd-gtk -y
+sudo add-apt-repository ppa:alexx2000/doublecmd -y && sudo apt-get install doublecmd-gtk -y
 
 ## XClip (https://github.com/astrand/xclip)
 sudo apt-get install xclip -y
 
 ## Elementary Tweaks (https://github.com/elementary-tweaks/elementary-tweaks)
-sudo add-apt-repository ppa:philip.scott/elementary-tweaks -y
-sudo apt-get install elementary-tweaks -y
+sudo add-apt-repository ppa:philip.scott/elementary-tweaks -y && sudo apt-get install elementary-tweaks -y
 
 ## LXTask Task Manager
 sudo apt-get install lxtask -y
@@ -61,26 +57,22 @@ wget -O dbeaver-ce.tar.gz https://dbeaver.jkiss.org/files/dbeaver-ce-latest-linu
 tar xf dbeaver-ce.tar.gz -C ~/workspace
 
 ## Github Atom (https://atom.io)
-sudo add-apt-repository ppa:webupd8team/atom -y
-sudo apt install atom -y
+sudo add-apt-repository ppa:webupd8team/atom -y && sudo apt-get install atom -y
 
 ## Calibre E-book Manager (https://calibre-ebook.com)
 sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.py | sudo python -c "import sys; main=lambda:sys.stderr.write('Download failed\n'); exec(sys.stdin.read()); main()"
 
 ## LibreOffice (https://www.libreoffice.org)
-sudo add-apt-repository ppa:libreoffice/libreoffice-6-2 -y
-sudo apt-get install libreoffice -y
+sudo add-apt-repository ppa:libreoffice/libreoffice-6-3 -y && sudo apt-get install libreoffice -y
 
 ## LibreOffice Papirus Theme (https://github.com/PapirusDevelopmentTeam/papirus-libreoffice-theme)
-sudo add-apt-repository ppa:papirus/papirus -y
-sudo apt-get install libreoffice-style-papirus -y
+sudo add-apt-repository ppa:papirus/papirus -y && sudo apt-get install libreoffice-style-papirus -y
 
 ## GParted (http://gparted.org)
 sudo apt-get install gparted -y
 
 ## Neofetch (https://github.com/dylanaraps/neofetch)
-sudo add-apt-repository ppa:dawidd0811/neofetch -y
-sudo apt install neofetch -y
+sudo add-apt-repository ppa:dawidd0811/neofetch -y && sudo apt-get install neofetch -y
 
 ## Jekyll (https://jekyllrb.com)
 sudo apt-get install ruby ruby-dev make gcc -y
