@@ -20,7 +20,7 @@ sudo add-apt-repository ppa:git-core/ppa -y && sudo apt-get install git -y
 sudo apt-get install tig -y
 
 ## Z shell (Zsh)
-sudo apt-get install zsh powerline fonts-powerline
+sudo apt-get install zsh powerline fonts-powerline && sudo chsh -s $(which zsh)
 
 ## Google Chrome (https://www.google.com/chrome)
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
