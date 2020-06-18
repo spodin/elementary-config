@@ -11,9 +11,7 @@ sudo unzip themes/extra-icons.zip -d ~/Icons
 gsettings set org.pantheon.desktop.gala.appearance button-layout 'close,minimize,maximize'
 gsettings set org.gnome.desktop.wm.preferences button-layout 'close,minimize,maximize'
 
-## Unzip and change system default fonts
-unzip fonts/sf-font-otf.zip -d ~/.fonts/san-francisco
-sudo fc-cache -fv
+## Change system default fonts
 gsettings set org.gnome.desktop.interface font-name 'SF Pro Text 9'
 gsettings set org.gnome.desktop.interface document-font-name 'SF Pro Text 10'
 gsettings set org.gnome.desktop.interface monospace-font-name 'Menlo for Powerline 10'
