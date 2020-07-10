@@ -4,9 +4,6 @@
 sudo add-apt-repository ppa:snwh/pulp -y && sudo apt-get install paper-icon-theme -y
 gsettings set org.gnome.desktop.interface icon-theme 'Paper'
 
-## Unzip extra icons images
-sudo unzip themes/extra-icons.zip -d ~/Icons
-
 ## Change window control layout
 gsettings set org.pantheon.desktop.gala.appearance button-layout 'close,minimize,maximize'
 gsettings set org.gnome.desktop.wm.preferences button-layout 'close,minimize,maximize'
