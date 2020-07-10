@@ -42,7 +42,7 @@ sudo add-apt-repository ppa:philip.scott/elementary-tweaks -y && sudo apt-get in
 sudo apt-get install lxtask -y
 
 ## Meld (https://meldmerge.org)
-sudo apt-get install meld
+sudo apt-get install meld -y
 
 ## Seahorse: Passwords and Encryption Keys Manager (https://wiki.gnome.org/Apps/Seahorse)
 sudo apt-get install seahorse -y
