@@ -58,7 +58,7 @@ sudo add-apt-repository ppa:webupd8team/atom -y && sudo apt-get install atom -y
 sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.py | sudo python -c "import sys; main=lambda:sys.stderr.write('Download failed\n'); exec(sys.stdin.read()); main()"
 
 ## LibreOffice (https://www.libreoffice.org)
-sudo add-apt-repository ppa:libreoffice/libreoffice-6-4 -y && sudo apt-get install libreoffice -y
+sudo add-apt-repository ppa:libreoffice/libreoffice-7-0 -y && sudo apt-get install libreoffice -y
 
 ## LibreOffice Papirus Theme (https://github.com/PapirusDevelopmentTeam/papirus-libreoffice-theme)
 sudo add-apt-repository ppa:papirus/papirus -y && sudo apt-get install libreoffice-style-papirus -y
