@@ -51,9 +51,6 @@ sudo apt-get install seahorse -y
 wget -O dbeaver-ce.tar.gz https://dbeaver.jkiss.org/files/dbeaver-ce-latest-linux.gtk.x86_64.tar.gz
 tar xf dbeaver-ce.tar.gz -C ~/workspace
 
-## Github Atom (https://atom.io)
-sudo add-apt-repository ppa:webupd8team/atom -y && sudo apt-get install atom -y
-
 ## Calibre E-book Manager (https://calibre-ebook.com)
 sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.py | sudo python -c "import sys; main=lambda:sys.stderr.write('Download failed\n'); exec(sys.stdin.read()); main()"
 
